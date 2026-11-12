@@ -1,0 +1,18 @@
+{
+  "name": "io.github.cronus42/ibc-mcp",
+  "description": "Research-grade interior-ballistics solver as a remote MCP server: modeled velocity/energy/pressure for exact cartridge+bullet+powder+charge specifications, charge work-up ladders, 3-DOF trajectory tables, and component lookups from a served database. Every result carries a non-removable safety envelope: this is modeling output, not published load data; start low and work up. The engine publishes its own error rates: graded against 30,327 printed loads at launch, average velocity error about 7.5%, worst powders included in the public table.",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://reloadingcalc.com/mcp",
+      "headers": {
+        "Authorization": "Bearer <your key from https://reloadingcalc.com/mcp.html>"
+      }
+    }
+  ],
+  "_meta": {
+    "io.github.cronus42/documentation": "https://reloadingcalc.com/mcp.html",
+    "io.github.cronus42/accuracy": "https://reloadingcalc.com/accuracy-paper.html"
+  }
+}
